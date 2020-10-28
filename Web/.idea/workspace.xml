@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ce6dce16-b648-4b35-9150-adef37174339" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scss/NewBook.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controler/Controler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/View_Error404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/View_Footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/View_Header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/View_HomePage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/View_LoginRegister.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Maquette.xd" beforeDir="false" afterPath="$PROJECT_DIR$/../Maquette.xd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logo.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
+  <component name="ProjectId" id="1jPdXP0v2wbTuewH4hanHTrioPp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Exercise_Looper/site" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" nameIsGenerated="true" document_root="$PROJECT_DIR$" port="8084">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce6dce16-b648-4b35-9150-adef37174339" name="Default Changelist" comment="" />
+      <created>1603709699286</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603709699286</updated>
+      <workItem from="1603709700342" duration="3881000" />
+      <workItem from="1603793396194" duration="10000" />
+      <workItem from="1603869116025" duration="5778000" />
+      <workItem from="1603875126388" duration="5630000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="667" y="181" key="#PHP" timestamp="1603710746704">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="181" key="#PHP/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603710746704" />
+    <state x="414" y="174" width="1092" height="729" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603710772503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" width="1092" height="729" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603710772503" />
+    <state x="628" y="297" key="EditFileWatcherDialog" timestamp="1603869438606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="628" y="297" key="EditFileWatcherDialog/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603869438606" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1603890337213">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603890337213" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603891682772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603891682772" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603891682772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603891682772" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603891682772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603891682771" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603891682772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603891682772" />
+    <state x="1015" y="372" key="NewPhpFileDialog" timestamp="1603892591893">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1015" y="372" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603892591893" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1603869440848">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603869440848" />
+  </component>
+</project>
