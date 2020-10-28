@@ -10,7 +10,7 @@ include "Model/Model.php";
 ?>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title>LoanBook</title>
+        <title>LendBooks</title>
         <script src="https://kit.fontawesome.com/bf0671b196.js" crossorigin="anonymous"></script>
         <Link href="../Assets/css/style.css" rel="stylesheet" type="text/css">
     </head>

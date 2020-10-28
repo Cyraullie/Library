@@ -8,6 +8,15 @@
 
 <html>
     <body>
-
+        <main>
+            <div class="row">
+                <div class="column">
+                    <h1>Login</h1>
+                </div>
+                <div class="column">
+                    <h1>Register</h1>
+                </div>
+            </div>
+        </main>
     </body>
 </html>

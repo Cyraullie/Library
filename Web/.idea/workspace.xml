@@ -20,19 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce6dce16-b648-4b35-9150-adef37174339" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scss/NewBook.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scss/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controler/Controler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/Model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/View_Error404.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/View_Footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/View_Header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/View_HomePage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/View_LoginRegister.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Maquette.xd" beforeDir="false" afterPath="$PROJECT_DIR$/../Maquette.xd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scss/.sass-cache/f4ff36ffbae32ebc5086cb440bc6601b1d32733d/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scss/.sass-cache/f4ff36ffbae32ebc5086cb440bc6601b1d32733d/style.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controler/Controler.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controler/Controler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/View_LoginRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/View_LoginRegister.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +68,7 @@
       <workItem from="1603709700342" duration="3881000" />
       <workItem from="1603793396194" duration="10000" />
       <workItem from="1603869116025" duration="5778000" />
-      <workItem from="1603875126388" duration="5630000" />
+      <workItem from="1603875126388" duration="7496000" />
     </task>
     <servers />
   </component>
@@ -110,22 +104,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603890337213" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603891682772">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603895701840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603891682772" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603891682772">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603895701840" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603895701840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603891682772" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603891682772">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603895701840" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603895701840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603891682771" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603891682772">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603895701840" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603895701840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603891682772" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.-659.1080.1880@0.0.1920.1040" timestamp="1603895701840" />
     <state x="1015" y="372" key="NewPhpFileDialog" timestamp="1603892591893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -110,6 +110,21 @@ main.Home {
   margin-bottom: 0;
 }
 
+/* Create two equal columns that floats next to each other */
+.column {
+  text-align: center;
+  width: 48.5%;
+  min-width: 500px;
+}
+
+/* Clear floats after the columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 
 
 
