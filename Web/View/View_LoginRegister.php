@@ -8,7 +8,7 @@
 
 <html>
     <body>
-        <main>
+        <main class="BasePage">
             <div class="row">
                 <div class="column">
                     <h1>Login</h1>

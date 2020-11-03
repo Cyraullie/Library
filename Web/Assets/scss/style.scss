@@ -15,10 +15,13 @@ body{
   background-color: #F2F2F2F2;
 }
 
+main.BasePage {
+  height: 100%;
+}
+
 header.desktop{
 
   background-color: $beige;
-  height: auto;
   display: block;
 
 }
@@ -81,9 +84,9 @@ header.desktop{
 
 main.Home {
   margin: 10px;
+  height: auto;
   margin-left: 50px;
   margin-right: 50px;
-  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

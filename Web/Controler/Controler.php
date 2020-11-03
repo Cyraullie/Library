@@ -20,9 +20,6 @@ include "Model/Model.php";
 require "View/View_Header.php";
 
 
-
-
-
 function HomePage(){
     require "View/View_HomePage.php";
     Footer();

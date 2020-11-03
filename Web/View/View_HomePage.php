@@ -8,7 +8,7 @@
 
 <html>
     <body class="Page">
-        <main class="Home">
+        <main class="Home BasePage">
             <div class="News">
                 <div class="flip-card">
                     <div class="flip-card-inner">

@@ -5,16 +5,22 @@
  */
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #F2F2F2F2; }
+  font-family: "Roboto", sans-serif;
+  background-color: #F2F2F2F2;
+}
+
+main.BasePage {
+  height: 100%;
+}
 
 header.desktop {
   background-color: #E8C29F;
-  height: auto;
-  display: block; }
+  display: block;
+}
 
 .heading {
-  display: flex; }
+  display: flex;
+}
 
 .logo {
   background-image: url(/Assets/image/logo.png);
@@ -24,12 +30,14 @@ header.desktop {
   width: 250px;
   height: 125px;
   margin-left: 20px;
-  margin-right: 0; }
+  margin-right: 0;
+}
 
 .menu {
   width: 100%;
   display: flex;
-  text-align: center; }
+  text-align: center;
+}
 
 .menuButton {
   background-color: #59100A;
@@ -42,12 +50,14 @@ header.desktop {
   width: 100%;
   text-decoration: none;
   font-size: 25px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
 
 .login {
   width: 100%;
   text-align: right;
-  margin: auto; }
+  margin: auto;
+}
 
 .loginButton {
   background-color: #59100A;
@@ -61,17 +71,19 @@ header.desktop {
   text-decoration: none;
   font-size: 17px;
   margin-right: 10%;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
 
 main.Home {
   margin: 10px;
+  height: auto;
   margin-left: 50px;
   margin-right: 50px;
-  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .IconNew {
   background-color: #59100A;
@@ -84,31 +96,36 @@ main.Home {
   padding-left: 10px;
   padding-right: 10px;
   margin: 10px;
-  font-size: 15px; }
+  font-size: 15px;
+}
 
 .News > * {
   margin: 10px;
   margin-top: 10px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 /* Create two equal columns that floats next to each other */
 .column {
   text-align: center;
   width: 48.5%;
-  min-width: 500px; }
+  min-width: 500px;
+}
 
 /* Clear floats after the columns */
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+}
 
 .footer {
   background-color: #59100A;
   height: 100px;
   color: white;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
 
 /**
  * Created by PhpStorm.
@@ -118,7 +135,8 @@ main.Home {
 .flip-card {
   background-color: transparent;
   height: 480px;
-  border: 1px solid #f1f1f1; }
+  border: 1px solid #f1f1f1;
+}
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
@@ -127,11 +145,13 @@ main.Home {
   height: 480px;
   text-align: center;
   transition: transform 0.8s;
-  transform-style: preserve-3d; }
+  transform-style: preserve-3d;
+}
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg); }
+  transform: rotateY(180deg);
+}
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
@@ -140,17 +160,20 @@ main.Home {
   height: 480px;
   -webkit-backface-visibility: hidden;
   /* Safari */
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+}
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #bbb;
-  color: black; }
+  color: black;
+}
 
 /* Style the back side */
 .flip-card-back {
   background-color: #E8C29F;
   color: #59100A;
-  transform: rotateY(180deg); }
+  transform: rotateY(180deg);
+}
 
 /*# sourceMappingURL=style.css.map */
