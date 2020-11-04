@@ -16,6 +16,8 @@ body{
 }
 
 main.BasePage {
+  display: block;
+  justify-content: center;
   height: 100%;
 }
 
@@ -25,6 +27,12 @@ header.desktop{
   display: block;
 
 }
+
+
+
+
+
+
 
 .heading {
   display: flex;
@@ -45,20 +53,20 @@ header.desktop{
   width: 100%;
   display: flex;
   text-align: center;
-
+  flex-direction: row;
+  @media (max-width: 800px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
-.menuButton {
-  background-color: $darkBrown;
-  BORDER: none;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 40px;
-  padding-right: 40px;
-  color: white;
+
+
+.textLogin{
   width: 100%;
-  text-decoration:none;
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
+}
+
+table.textLogin{
+  border-spacing : 10px;
 }
 
 .login {
@@ -67,20 +75,7 @@ header.desktop{
   margin: auto;
 }
 
-.loginButton {
-  background-color: $darkBrown;
-  BORDER: none;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: white;
-  width: 100%;
-  text-decoration:none;
-  font-size: 17px;
-  margin-right: 10%;
-  font-family: 'Roboto', sans-serif;
-}
+
 
 main.Home {
   margin: 10px;
@@ -113,15 +108,26 @@ main.Home {
   margin-bottom: 0;
 }
 
-/* Create two equal columns that floats next to each other */
+
+
+
+
+
+
+
+
+
 .column {
-  text-align: center;
+  margin: auto;
   width: 48.5%;
   min-width: 500px;
+  padding-left: 5px;
+  padding-right: 10px;
 }
 
-/* Clear floats after the columns */
 .row {
+  width: 90%;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -147,3 +153,4 @@ main.Home {
 }
 
 @import "NewBook";
+@import "button";

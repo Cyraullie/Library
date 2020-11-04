@@ -10,6 +10,8 @@ body {
 }
 
 main.BasePage {
+  display: block;
+  justify-content: center;
   height: 100%;
 }
 
@@ -37,41 +39,27 @@ header.desktop {
   width: 100%;
   display: flex;
   text-align: center;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
-.menuButton {
-  background-color: #59100A;
-  BORDER: none;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 40px;
-  padding-right: 40px;
-  color: white;
+.textLogin {
   width: 100%;
-  text-decoration: none;
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
+}
+
+table.textLogin {
+  border-spacing: 10px;
 }
 
 .login {
   width: 100%;
   text-align: right;
   margin: auto;
-}
-
-.loginButton {
-  background-color: #59100A;
-  BORDER: none;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: white;
-  width: 100%;
-  text-decoration: none;
-  font-size: 17px;
-  margin-right: 10%;
-  font-family: "Roboto", sans-serif;
 }
 
 main.Home {
@@ -105,15 +93,17 @@ main.Home {
   margin-bottom: 0;
 }
 
-/* Create two equal columns that floats next to each other */
 .column {
-  text-align: center;
+  margin: auto;
   width: 48.5%;
   min-width: 500px;
+  padding-left: 5px;
+  padding-right: 10px;
 }
 
-/* Clear floats after the columns */
 .row {
+  width: 90%;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -174,6 +164,35 @@ main.Home {
   background-color: #E8C29F;
   color: #59100A;
   transform: rotateY(180deg);
+}
+
+.menuButton {
+  background-color: #59100A;
+  BORDER: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: white;
+  width: 100%;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+.Button {
+  background-color: #59100A;
+  BORDER: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  width: 100%;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 10%;
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
