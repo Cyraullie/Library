@@ -4,123 +4,192 @@
  * Date: 28/10/2020
  */
 body {
+  height: 100%;
+  position: relative;
   margin: 0;
   font-family: "Roboto", sans-serif;
   background-color: #F2F2F2F2;
 }
 
-main.BasePage {
-  display: block;
-  justify-content: center;
-  height: 100%;
+a:link {
+  text-decoration: none;
 }
 
-header.desktop {
-  background-color: #E8C29F;
-  display: block;
-}
-
-.heading {
-  display: flex;
-}
-
-.logo {
-  background-image: url(/Assets/image/logo.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 250px;
-  width: 250px;
-  height: 125px;
-  margin-left: 20px;
-  margin-right: 0;
-}
-
-.menu {
-  width: 100%;
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-}
-@media (max-width: 800px) {
-  .menu {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-.textLogin {
-  width: 100%;
-}
-
-table.textLogin {
-  border-spacing: 10px;
-}
-
-.login {
-  width: 100%;
-  text-align: right;
-  margin: auto;
+a:link:hover {
+  text-decoration: none;
+  color: white;
 }
 
 main.Home {
-  margin: 10px;
   height: auto;
-  margin-left: 50px;
-  margin-right: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.IconNew {
-  background-color: #59100A;
-  color: #E8C29F;
-  float: right;
-  BORDER: none;
-  border-radius: 30px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 10px;
-  font-size: 15px;
-}
-
-.News > * {
-  margin: 10px;
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-
-.column {
+main.BasePage {
   margin: auto;
-  width: 48.5%;
-  min-width: 500px;
-  padding-left: 5px;
-  padding-right: 10px;
-}
-
-.row {
+  display: flex;
+  justify-content: center;
   width: 90%;
+}
+
+.columnBook {
   margin: auto;
+  margin-top: 0;
+  width: 48.5%;
+  min-width: 400px;
+}
+
+.rowBook {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1rem;
 }
 
-.footer {
+.menuButton {
   background-color: #59100A;
-  height: 100px;
+  border-left: 1px solid #E8C29F;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
   color: white;
+  width: 100%;
+  font-size: 25px;
   font-family: "Roboto", sans-serif;
+}
+@media (max-width: 800px) {
+  .menuButton {
+    border-left: 0;
+    border-bottom: 1px solid #E8C29F;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.Button {
+  background-color: #59100A;
+  BORDER: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  width: 100%;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 800px) {
+  .Button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.ButtonSlide {
+  color: #E8C29F;
+  background-color: #59100A;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.ButtonInSlide {
+  width: 90%;
+  right: 130px;
+  top: 430px;
+  left: 15px;
+  position: fixed;
+}
+
+.ButtonLogin {
+  background-color: #59100A;
+  BORDER: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  width: 100%;
+  font-size: 17px;
+  margin-right: 10%;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 800px) {
+  .ButtonLogin {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+/*
+Carrousel
+ */
+.MultiCarousel {
+  float: left;
+  overflow: hidden;
+  padding: 15px;
+  width: 100%;
+  position: relative;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+  transition: 1s ease all;
+  float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+  float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background: #f1f1f1;
+  color: #666;
+}
+
+.MultiCarousel .leftLst, .MultiCarousel .rightLst {
+  position: absolute;
+  border-radius: 50%;
+  top: calc(50% - 20px);
+}
+
+.MultiCarousel .leftLst {
+  left: 0;
+}
+
+.MultiCarousel .rightLst {
+  right: 0;
+}
+
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over {
+  pointer-events: none;
+  background: #ccc;
 }
 
 /**
- * Created by PhpStorm.
- * User: Cyril.GOLDENSCHUE
- * Date: 28/10/2020
+ * Flip card
  */
 .flip-card {
   background-color: transparent;
@@ -166,33 +235,130 @@ main.Home {
   transform: rotateY(180deg);
 }
 
-.menuButton {
+/**
+ * item in home page
+ */
+.IconNew {
   background-color: #59100A;
+  color: #E8C29F;
+  float: right;
   BORDER: none;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 40px;
-  padding-right: 40px;
-  color: white;
-  width: 100%;
-  text-decoration: none;
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
+  border-radius: 30px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  font-size: 15px;
 }
 
-.Button {
+.News > * {
+  margin-left: calc(25% - 20px);
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.InfoBook {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.summary {
+  width: 95%;
+  margin: auto;
+  font-size: 18px;
+  text-align: left;
+}
+
+.footer {
   background-color: #59100A;
-  BORDER: none;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: white;
+  height: 100px;
   width: 100%;
-  text-decoration: none;
-  font-size: 17px;
-  margin-right: 10%;
+  color: white;
   font-family: "Roboto", sans-serif;
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 800px) {
+  .footer {
+    bottom: auto;
+  }
+}
+@media (max-height: 800px) {
+  .footer {
+    bottom: auto;
+  }
+}
+
+.footerLogin {
+  background-color: #59100A;
+  height: 100px;
+  width: 100%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  bottom: 0;
+}
+@media (max-height: 800px) and (max-width: 800px) {
+  .footerLogin {
+    bottom: auto;
+  }
+}
+
+header.desktop {
+  background-color: #E8C29F;
+  display: block;
+}
+
+.heading {
+  display: flex;
+}
+
+.logo {
+  background-image: url(/Assets/image/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 250px;
+  width: 250px;
+  height: 125px;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.login {
+  width: 100%;
+  text-align: right;
+  margin: auto;
+}
+
+.textLogin {
+  width: 100%;
+}
+
+input[type=text].textLogin {
+  margin-bottom: 10px;
+}
+@media (max-width: 800px) {
+  input[type=text].textLogin {
+    height: 40px;
+  }
+}
+
+.columnBook > h1 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

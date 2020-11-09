@@ -10,128 +10,62 @@ $beige : #E8C29F;
 $darkBrown : #59100A;
 
 body{
+  height: 100%;
+  position:relative;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background-color: #F2F2F2F2;
 }
 
-main.BasePage {
-  display: block;
-  justify-content: center;
-  height: 100%;
+a:link {
+  text-decoration: none;
 }
 
-header.desktop{
-
-  background-color: $beige;
-  display: block;
-
+a:link:hover {
+  text-decoration: none;
+  color: white;
 }
-
-
-
-
-
-
-
-.heading {
-  display: flex;
-}
-
-.logo {
-  background-image: url(/Assets/image/logo.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: $size;
-  width: $size;
-  height: $size/2;
-  margin-left: 20px;
-  margin-right: 0;
-}
-
-.menu {
-  width: 100%;
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  @media (max-width: 800px) {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-
-.textLogin{
-  width: 100%;
-}
-
-table.textLogin{
-  border-spacing : 10px;
-}
-
-.login {
-  width: 100%;
-  text-align: right;
-  margin: auto;
-}
-
-
 
 main.Home {
-  margin: 10px;
   height: auto;
-  margin-left: 50px;
-  margin-right: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.IconNew {
-  background-color: $darkBrown;
-  color: $beige;
-  float: right;
-  BORDER: none;
-  border-radius: 30px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 10px;
-  font-size: 15px;
-}
-
-.News > *{
-  margin: 10px;
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-
-
-
-
-
-
-
-
-
-
-.column {
-  margin: auto;
-  width: 48.5%;
-  min-width: 500px;
-  padding-left: 5px;
-  padding-right: 10px;
-}
-
-.row {
+main.BasePage {
+  margin:auto;
+  display: flex;
+  justify-content: center;
   width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.columnBook {
   margin: auto;
+  margin-top: 0;
+  width: 48.5%;
+  min-width: 400px;
+
+
+}
+
+.rowBook {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1rem;
 }
 
 
@@ -144,13 +78,10 @@ main.Home {
 
 
 
-.footer {
-  background-color: $darkBrown;
-  height: 100px;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-
-}
 
 @import "NewBook";
 @import "button";
+@import "homePage";
+@import "Footer";
+@import "Header";
+@import "Login";

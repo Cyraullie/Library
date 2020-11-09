@@ -1,0 +1,109 @@
+/*
+Carrousel
+ */
+
+.MultiCarousel {
+  float: left;
+  overflow: hidden;
+  padding: 15px;
+  width: 100%;
+  position:relative;
+}
+
+.MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+.MultiCarousel .MultiCarousel-inner .item { float: left;}
+.MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+.MultiCarousel .leftLst { left:0; }
+.MultiCarousel .rightLst { right:0; }
+
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+
+
+/**
+ * Flip card
+ */
+
+$height : 480px;
+$width : 300px;
+
+.flip-card {
+  background-color: transparent;
+  height: $height;
+  border: 1px solid #f1f1f1;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: $width;
+  height: $height;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: $width;
+  height: $height;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: $beige;
+  color: $darkBrown;
+  transform: rotateY(180deg);
+}
+
+
+/**
+ * item in home page
+ */
+
+.IconNew {
+  background-color: $darkBrown;
+  color: $beige;
+  float: right;
+  BORDER: none;
+  border-radius: 30px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.News > *{
+  margin-left: calc(25% - 20px);;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.InfoBook {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.summary{
+  width: 95% ;
+  margin: auto;
+  font-size: 18px;
+  text-align: left;
+}
+
