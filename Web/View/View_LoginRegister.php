@@ -7,50 +7,35 @@
 ?>
 
 <html>
-    <body>
+    <body class="Page">
         <main class="BasePage">
-            <div class="row">
-                <div class="column">
+            <div class="rowBook">
+                <div class="columnBook">
                     <h1>Login</h1>
-                    <form method="post" action="/">
-                        <table class="textLogin">
-                            <tr class="textLogin">
-                                <td><input type="text" class="textLogin" placeholder="Email"></td>
-                            </tr>
-                            <tr class="textLogin">
-                                <td><input type="text" class="textLogin" placeholder="Mot de passe"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="submit" class="textLogin Button" value="Se connecter"></td>
-                            </tr>
-                        </table>
+                    <form class="textLogin"  method="post" action="/">
+                        <input type="text" class="textLogin" placeholder="Email">
+                        <input type="text" class="textLogin" placeholder="Mot de passe">
+                        <input type="submit" class="textLogin Button" value="Se connecter">
                     </form>
+
                 </div>
-                <div class="column">
+                <div class="columnBook">
                     <h1>Register</h1>
-                    <form method="post" action="/">
-                        <table class="textLogin">
-                            <tr class="textLogin">
-                                <td><input type="text" class="textLogin" placeholder="Nom"></td>
-                                <td><input type="text" class="textLogin" placeholder="Prénom"></td>
-                            </tr>
-                        </table>
-                        <table class="textLogin">
-                            <tr class="textLogin">
-                                <td><input type="text" class="textLogin" placeholder="Pseudo"></td>
-                                <td><input type="text" class="textLogin" placeholder="Email"></td>
-                            </tr>
-                            <tr class="textLogin">
-                                <td><input type="text" class="textLogin" placeholder="Téléphone"></td>
-                            </tr>
-                            <tr class="textLogin">
-                                <td><input type="text" class="textLogin" placeholder="Mot de passe"></td>
-                                <td><input type="text" class="textLogin" placeholder="Confirmer le mot de passe"></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2"><input type="submit" class="textLogin Button" value="S'inscrire"></td>
-                            </tr>
-                        </table>
+                    <form class="textLogin" method="post" action="/">
+
+                            <input type="text" class="textLogin" placeholder="Nom">
+                            <input type="text" class="textLogin" placeholder="Prénom">
+
+                            <input type="text" class="textLogin" placeholder="Pseudo">
+                            <input type="text" class="textLogin" placeholder="Email">
+
+                            <input type="text" class="textLogin" placeholder="Téléphone">
+
+                            <input type="text" class="textLogin" placeholder="Mot de passe">
+                            <input type="text" class="textLogin" placeholder="Confirmer le mot de passe">
+
+                            <input type="submit" class="textLogin Button" value="S'inscrire">
+
                     </form>
                 </div>
             </div>

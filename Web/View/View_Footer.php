@@ -8,7 +8,7 @@
 
 <html>
     <body>
-        <div class="footer">
+        <div class=" <?= $value == "login" ? "footerLogin" : "footer"?>">
 
         </div>
     </body>

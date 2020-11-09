@@ -9,7 +9,9 @@ include "Controler/Controler.php";
 
 $request = '';
 $get_params_offset = stripos($_SERVER['REQUEST_URI'], '?');
-
+if(isset($_GET['id'])){
+    $id = intval($_GET['id']);
+}
 // Remove GET parameters from request uri
 if ($get_params_offset) {
     $request = substr($_SERVER['REQUEST_URI'], 0, $get_params_offset);
@@ -29,6 +31,9 @@ switch ($request) {
         require 'View/View_NewExercise.php';
         break;
     case '/AddBook' :
+        NewFields();
+        break;
+    case '/Details' :
         NewFields();
         break;
     case '/Login' :
