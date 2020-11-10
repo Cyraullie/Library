@@ -8,13 +8,14 @@
 $size : 250px;
 $beige : #E8C29F;
 $darkBrown : #59100A;
+$background : #F2F2F2F2;
 
 body{
   height: 100%;
   position:relative;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #F2F2F2F2;
+  background-color: $background;
 }
 
 a:link {

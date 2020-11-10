@@ -23,7 +23,6 @@ Carrousel
   text-align: center;
   padding:10px;
   margin:10px;
-  background:#f1f1f1;
   color:#666;
 }
 
@@ -54,7 +53,6 @@ $width : 300px;
 .flip-card {
   background-color: transparent;
   height: $height;
-  border: 1px solid #f1f1f1;
 }
 
 /* This container is needed to position the front and back side */
@@ -114,7 +112,6 @@ $width : 300px;
 }
 
 .News > *{
-  margin-left: calc(25% - 20px);;
   margin-top: 10px;
   margin-bottom: 0;
 }
