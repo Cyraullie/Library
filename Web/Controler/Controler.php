@@ -28,6 +28,26 @@ function HomePage(){
     Footer("normal");
 }
 
+function Loan(){
+    require 'View/View_LoanPage.php';
+    Footer("normal");
+}
+
+function Render(){
+    require 'View/View_RenderPage.php';
+    Footer("normal");
+}
+
+function AddBook(){
+    require 'View/View_NewBookPage.php';
+    Footer("normal");
+}
+
+
+
+
+
+
 function LoginAndRegister(){
     require "View/View_LoginRegister.php";
 

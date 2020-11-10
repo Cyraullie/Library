@@ -305,4 +305,21 @@ input[type='text'].textLogin {
 .columnBook > h1 {
   text-align: center; }
 
+/*
+New
+ */
+.imageBook {
+  margin: 15px;
+  height: 480px;
+  width: 300px;
+  border: 1px solid #59100A; }
+
+.iconAdd {
+  margin-left: 25%;
+  margin-top: 50%; }
+
+/*
+Details
+ */
+
 /*# sourceMappingURL=style.css.map */

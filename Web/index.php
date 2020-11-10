@@ -25,13 +25,13 @@ switch ($request) {
         HomePage();; //home directory
         break;
     case '/Loan' :
-        require 'View/View_LoanPage.php';
+        Loan();
         break;
     case '/Render' :
-        require 'View/View_RenderPage.php';
+        Render();
         break;
     case '/AddBook' :
-        require 'View/View_NewBookPage.php';
+        AddBook();
         break;
     case '/Details' :
         Details($id);
