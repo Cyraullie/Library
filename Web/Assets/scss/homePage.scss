@@ -114,6 +114,12 @@ $width : 300px;
 .News > *{
   margin-top: 10px;
   margin-bottom: 0;
+
+  @media (min-width: 1900px){
+
+    margin-left: calc(25% - 50px);
+  }
+
 }
 
 .InfoBook {

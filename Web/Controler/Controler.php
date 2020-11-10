@@ -34,6 +34,17 @@ function LoginAndRegister(){
     Footer("login");
 }
 
+function Details($id){
+    require "View/View_DetailsBook.php";
+
+    Footer("normal");
+}
+
+
+
+
+
+
 
 
 function Error(){

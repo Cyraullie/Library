@@ -220,6 +220,9 @@ Carrousel
 .News > * {
   margin-top: 10px;
   margin-bottom: 0; }
+  @media (min-width: 1900px) {
+    .News > * {
+      margin-left: calc(25% - 50px); } }
 
 .InfoBook {
   margin-left: 10px;
