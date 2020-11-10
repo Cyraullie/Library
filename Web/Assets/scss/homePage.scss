@@ -119,6 +119,10 @@ $width : 300px;
 
     margin-left: calc(25% - 50px);
   }
+  @media (max-width: 800px){
+
+    margin-left: calc(25% - 50px);
+  }
 
 }
 

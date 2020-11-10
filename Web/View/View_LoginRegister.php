@@ -10,7 +10,7 @@
     <body class="Page">
         <main class="BasePage">
             <div class="rowBook">
-                <div class="columnBook">
+                <div class="columnLogin">
                     <h1>Login</h1>
                     <form class="textLogin"  method="post" action="/">
                         <input type="text" class="textLogin" placeholder="Email">
@@ -19,7 +19,7 @@
                     </form>
 
                 </div>
-                <div class="columnBook">
+                <div class="columnLogin">
                     <h1>Register</h1>
                     <form class="textLogin" method="post" action="/">
 

@@ -9,9 +9,10 @@ $size : 250px;
 $beige : #E8C29F;
 $darkBrown : #59100A;
 $background : #F2F2F2F2;
+$hardDarkBrown : #400B06;
 
 body{
-  height: 100%;
+  min-height: 100vh;
   position:relative;
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -27,17 +28,12 @@ a:link:hover {
   color: white;
 }
 
-main.Home {
+main.BasePage {
   height: auto;
+  margin:auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-}
-
-main.BasePage {
-  margin:auto;
-  display: flex;
   justify-content: center;
   width: 90%;
 }
@@ -53,11 +49,24 @@ main.BasePage {
 
 
 
-.columnBook {
+.columnLogin {
   margin: auto;
   margin-top: 0;
   width: 48.5%;
   min-width: 400px;
+
+
+}
+
+.columnBook {
+  margin-top: 30px;
+  display: flex;
+  width: 48.5%;
+  min-width: 400px;
+
+  @media (max-width: 800px) {
+    margin-top: 5px;
+  }
 
 
 }
