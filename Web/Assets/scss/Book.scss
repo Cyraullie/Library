@@ -38,7 +38,7 @@ New
 .DataBook{
   height: 45%;
   @media (max-width: 800px) {
-    height: 40%;
+    height: auto;
 
   }
 }
@@ -55,9 +55,12 @@ New
   }
 }
 .SummaryBook {
-  height: 42%;
+  height: 39%;
+  margin-top: 10px;
   @media (max-width: 800px) {
-    margin-top: 10px;
+
+    display: grid;
+    margin-bottom: 30px;
   }
 }
 
