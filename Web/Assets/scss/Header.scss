@@ -1,0 +1,45 @@
+header.desktop{
+
+  background-color: $beige;
+  display: block;
+
+}
+
+
+.heading {
+  display: flex;
+}
+
+.logo {
+  background-image: url(/Assets/image/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $size;
+  width: $size;
+  height: $size/2;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  @media (max-width: 800px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.login {
+  width: 100%;
+  text-align: right;
+  margin: auto;
+}
+
+
+
+
+
+

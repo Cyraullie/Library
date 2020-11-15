@@ -1,0 +1,15 @@
+
+.textLogin{
+  width: 100%;
+}
+
+input[type='text'].textLogin{
+  margin-bottom: 10px;
+  @media (max-width: 800px) {
+    height: 40px;
+  }
+}
+
+.columnLogin > h1{
+  text-align: center;
+}
