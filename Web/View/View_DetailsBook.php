@@ -16,7 +16,7 @@
         </div>
 
         <div class="columnBook">
-            <form class="DetailsBook" method="post" action="/">
+            <form class="DetailsBook" method="post" action="/Render">
                 <div class="DataBookDetails">
                     <div class="InfoBook">
                         <h1>L'invocation : Le Novice</h1>
@@ -34,7 +34,7 @@
                             Orphelin, Fletcher imagine déjà le futur avec une vie assez difficile, mais dans la forge de son père adoptif, qui l'a pris sous son aile dès qu'il a été retrouvé seul, abandonné.
                         </div>
                     </div>
-                    <input type="submit" class="ButtonBook" value="Ajouter">
+                    <input type="submit" class="ButtonBook" value="Emprunter">
                 </div>
             </form>
         </div>
