@@ -408,7 +408,7 @@ New
 .imageBook {
   margin: 15px;
   margin-top: 30px;
-  height: 480px;
+  height: 476px;
   width: 300px;
   border: 1px solid #59100A;
   background-color: #E8C29F;
@@ -416,7 +416,7 @@ New
 @media (max-width: 800px) {
   .imageBook {
     margin-top: 5px;
-    height: 240px;
+    height: 238px;
     width: 150px;
   }
 }
@@ -478,5 +478,41 @@ New
 /*
 Details
  */
+.ImageBookDetail {
+  width: 100%;
+}
+
+.DataBookDetails {
+  width: 100%;
+  height: 44%;
+  margin-bottom: 16px;
+  border: 1px solid #59100A;
+}
+@media (max-width: 800px) {
+  .DataBookDetails {
+    margin-bottom: 5px;
+    height: auto;
+  }
+}
+
+.DetailsBook {
+  width: 100%;
+}
+
+.SummaryDetailsBook {
+  height: 39%;
+  margin-top: 10px;
+  border: 1px solid #59100A;
+}
+@media (max-width: 800px) {
+  .SummaryDetailsBook {
+    display: inherit;
+    height: auto;
+  }
+}
+
+.SummaryDetailsBook > .summary {
+  padding-bottom: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
