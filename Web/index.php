@@ -30,6 +30,9 @@ switch ($request) {
     case '/Render' :
         Render();
         break;
+    case '/RenderBook' :
+        RenderBook();
+        break;
     case '/AddBook' :
         AddBook();
         break;

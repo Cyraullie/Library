@@ -122,3 +122,23 @@
 
 }
 
+.ButtonLoan {
+  background-color: $darkBrown;
+  BORDER: none;
+  margin: auto;
+  margin-top: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 54px;
+  color: white;
+  width: 90%;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+
+  @media (max-width: 800px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}

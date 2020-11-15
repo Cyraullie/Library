@@ -38,6 +38,10 @@ function Render(){
     Footer("normal");
 }
 
+function RenderBook(){
+    HomePage();
+}
+
 function AddBook(){
     require 'View/View_NewBookPage.php';
     Footer("normal");

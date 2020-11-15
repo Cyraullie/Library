@@ -54,8 +54,6 @@ main.BasePage {
   margin-top: 0;
   width: 48.5%;
   min-width: 400px;
-
-
 }
 
 .columnBook {
@@ -67,8 +65,23 @@ main.BasePage {
   @media (max-width: 800px) {
     margin-top: 5px;
   }
+}
 
+.columnLoan {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 100px;
+  width: 100%;
+  height: auto;
+  min-width: 400px;
+  @media (max-width: 800px) {
 
+    margin-bottom: 30px;
+  }
 }
 
 .rowBook {
