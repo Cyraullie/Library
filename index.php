@@ -1,11 +1,13 @@
-<?php
+<?php 
 /**
  * Created by PhpStorm.
  * User: Cyril.GOLDENSCHUE
  * Date: 28/10/2020
  */
 
-include "Controler/Controler.php";
+
+
+require_once "../php/Controllers/controller.php";
 
 $request = '';
 $get_params_offset = stripos($_SERVER['REQUEST_URI'], '?');
@@ -22,7 +24,7 @@ if ($get_params_offset) {
 switch ($request) {
     case '' :
     case '/' :
-        HomePage();; //home directory
+        HomePage(); //home directory
         break;
     case '/Loan' :
         Loan();
@@ -47,3 +49,4 @@ switch ($request) {
         Error(); //Aie, something wrong ! (page not found)
         break;
 }
+?>
