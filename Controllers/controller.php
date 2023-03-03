@@ -5,7 +5,7 @@
  * Date: 28/10/2020
  */
 
-include "Model/Model.php";
+require_once "../php/Models/model.php";
 
 ?>
     <head>
@@ -20,21 +20,21 @@ include "Model/Model.php";
 
 <?php
 
-require "View/View_Header.php";
+require "../php/View/View_Header.php";
 
 
 function HomePage(){
-    require "View/View_HomePage.php";
+    require "../php/View/View_HomePage.php";
     Footer("normal");
 }
 
 function Loan(){
-    require 'View/View_LoanPage.php';
+    require '../php/View/View_LoanPage.php';
     Footer("normal");
 }
 
 function Render(){
-    require 'View/View_RenderPage.php';
+    require '../php/View/View_RenderPage.php';
     Footer("normal");
 }
 
@@ -43,7 +43,7 @@ function RenderBook(){
 }
 
 function AddBook(){
-    require 'View/View_NewBookPage.php';
+    require '../php/View/View_NewBookPage.php';
     Footer("normal");
 }
 
@@ -53,13 +53,13 @@ function AddBook(){
 
 
 function LoginAndRegister(){
-    require "View/View_LoginRegister.php";
+    require "../php/View/View_LoginRegister.php";
 
     Footer("login");
 }
 
 function Details($id){
-    require "View/View_DetailsBook.php";
+    require "../php/View/View_DetailsBook.php";
 
     Footer("normal");
 }
@@ -72,11 +72,11 @@ function Details($id){
 
 
 function Error(){
-    require "View/View_Error404.php";
+    require "../php/View/View_Error404.php";
     Footer("normal");
 }
 
 function Footer($value){
-    require "View/View_Footer.php";
+    require "../php/View/View_Footer.php";
 }
 
