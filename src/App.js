@@ -1,12 +1,12 @@
-import './App.css';
 import './assets/css/style.css';
+import './assets/css/menu.css';
+import './assets/css/book.css';
+
 import Navigation from "./navigations/navigation";
 
 function App() {
   return (
-    
-    
-    <div className="App">
+    <div>
       <Navigation />
     </div>
   );

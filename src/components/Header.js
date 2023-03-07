@@ -1,19 +1,17 @@
 import logo from '../assets/img/logo.png';
 
-function BasicExample() {
+function Header() {
   return (
-    
-    <div class="header">
-     
-        <div class="menu">
-            <a class="menuButton" href="/Loan">Emprunter</a>
-            <a class="menuButton" href="/Render">Rendre</a>
-            <a href="/"><img class="logo" src={logo} /></a>
-            <a class="menuButton" href="/AddBook">Ajouter un livre</a>
-            <a class="menuButton" href="/Login">Login</a>
-        </div>
+    <div className="headerArea">
+      <div className="menuHeader">
+        <a className="menuButtonHeader" href="/Loan">Emprunter</a>
+        <a className="menuButtonHeader" href="/Render">Rendre</a>
+        <a href="/"><img className="logo" src={logo} /></a>
+        <a className="menuButtonHeader" href="/AddBook">Ajouter un livre</a>
+        <a className="menuButtonHeader" href="/Login">Login</a>
+      </div>
     </div>
   );
 }
 
-export default BasicExample;
+export default Header;

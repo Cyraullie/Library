@@ -9,11 +9,11 @@ import About from '../screens/About';
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="body">
       <Header />
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="about" element={<About />} />
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
         </Routes>
       <Footer />
     </div>
