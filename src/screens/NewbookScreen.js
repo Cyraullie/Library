@@ -1,5 +1,5 @@
 
-function HomeScreen() {
+function NewBookScreen() {
   return (
     <div className='Page'>
         <form className="bookAddArea">
@@ -30,6 +30,6 @@ function HomeScreen() {
   );
 }
 
-export default HomeScreen;
+export default NewBookScreen;
 
 
