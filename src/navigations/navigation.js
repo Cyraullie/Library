@@ -7,6 +7,8 @@ import Footer from "../components/Footer";
 import Home from '../screens/HomeScreen';
 import AddBook from '../screens/NewbookScreen.js';
 import Details from '../screens/DetailsScreen.js';
+import Loan from '../screens/LoanScreen.js';
+import Render from '../screens/RenderScreen.js';
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/AddBook" element={<AddBook />} />
           <Route path="/Details" element={<Details/>} />
+          <Route path="/Loan" element={<Loan/>} />
+          <Route path="/Render" element={<Render/>} />
         </Routes>
       <Footer />
     </div>
