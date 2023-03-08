@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 
 import Home from '../screens/HomeScreen';
 import AddBook from '../screens/NewbookScreen.js';
+import Details from '../screens/DetailsScreen.js';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/AddBook" element={<AddBook />} />
+          <Route path="/Details" element={<Details/>} />
         </Routes>
       <Footer />
     </div>

@@ -30,7 +30,7 @@ function Carousel() {
               <div class="summary">
                   Orphelin, Fletcher imagine déjà le futur avec une vie assez difficile, mais dans la forge de son père adoptif, qui l'a pris sous son aile dès qu'il a été retrouvé seul, abandonné.
               </div>
-              <a class="Button ButtonInSlide" href="/Details?id=0">Détails</a>
+              <a class="Button ButtonInSlide" href="/Details">Détails</a>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ function Carousel() {
               <div class="summary">
                   Orphelin, Fletcher imagine déjà le futur avec une vie assez difficile, mais dans la forge de son père adoptif, qui l'a pris sous son aile dès qu'il a été retrouvé seul, abandonné.
               </div>
-              <a class="Button ButtonInSlide" href="/Details?id=0">Détails</a>
+              <a class="Button ButtonInSlide" href="/Details">Détails</a>
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@ function Carousel() {
               <div class="summary">
                   Orphelin, Fletcher imagine déjà le futur avec une vie assez difficile, mais dans la forge de son père adoptif, qui l'a pris sous son aile dès qu'il a été retrouvé seul, abandonné.
               </div>
-              <a class="Button ButtonInSlide" href="/Details?id=0">Détails</a>
+              <a class="Button ButtonInSlide" href="/Details">Détails</a>
             </div>
           </div>
         </div>
