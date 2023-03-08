@@ -9,6 +9,7 @@ import AddBook from '../screens/NewbookScreen.js';
 import Details from '../screens/DetailsScreen.js';
 import Loan from '../screens/LoanScreen.js';
 import Render from '../screens/RenderScreen.js';
+import Login from '../screens/LoginScreen.js';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/Details" element={<Details/>} />
           <Route path="/Loan" element={<Loan/>} />
           <Route path="/Render" element={<Render/>} />
+          <Route path="/Login" element={<Login/>} />
         </Routes>
       <Footer />
     </div>
