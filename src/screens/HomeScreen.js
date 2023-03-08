@@ -7,15 +7,6 @@ function HomeScreen() {
       
       <Carousel/>
     </div>
-    
-
-
-      
-
-        
-        
-      
-
   );
 }
 

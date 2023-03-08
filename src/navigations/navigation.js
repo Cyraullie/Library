@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 import Home from '../screens/HomeScreen';
-import About from '../screens/About';
+import AddBook from '../screens/NewbookScreen.js';
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
       <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="/AddBook" element={<AddBook />} />
         </Routes>
       <Footer />
     </div>
