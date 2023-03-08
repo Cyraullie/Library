@@ -9,7 +9,7 @@ function LoginScreen() {
                     <div>
                         <input type="text" className="bookInput data" placeholder="Pseudo"></input>
                         <input type="password" className="bookInput" placeholder="Mot de passe"></input>
-                        <input type="submit" className="lbBtn" value="Connection"></input>
+                        <input type="submit" className="lbBtn" value="Connexion"></input>
                     </div>
                 </div>
                 <div id="register">
