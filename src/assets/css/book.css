@@ -122,3 +122,47 @@
     margin-bottom: 30px;
     height: 50%;
 }
+
+.LoanBookImage {
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.bookTable > tr > td, th {
+ border: 1px solid;
+}
+
+.bookTable > thead > tr > th {
+    background-color: var(--darkBrown);
+    color: white;
+    text-align: center;
+    border: 1px solid;
+    border-color: black;
+}
+
+.bookTable > tbody > tr > td {
+    background-color: var(--beige);
+    color: var(--darkBrown);
+    text-align: center;
+    border: 1px solid;
+    border-color: black;
+}
+
+.bookTable {
+    margin: auto;
+    margin-top: 6%;
+    width: 60%;
+}
+
+.bookCover {
+    width: 165px;
+    align-items: center;
+}
+
+.bookState {
+    text-align: center;
+    width: 150px;
+}

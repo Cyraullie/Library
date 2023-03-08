@@ -7,7 +7,7 @@
 }
 
 .Page {
-    min-height: calc(100vh - var(--size));
+    min-height: 60.6vh;
 }
 
 .body {
@@ -29,8 +29,8 @@
 }
   
 .logo {
-margin-left: 20px;
-margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .hidden {
