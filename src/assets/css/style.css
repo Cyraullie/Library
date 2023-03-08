@@ -6,12 +6,10 @@
     --hardDarkBrown : #400B06;
 }
 
-.Page {
-    min-height: 60.6vh;
-}
 
 .body {
-    background-color: var(--background);
+    min-height: 60.6vh;
+    height: auto;
 }
 
 .footerArea {
@@ -35,4 +33,29 @@
 
 .hidden {
     display: none;
+}
+
+.filter {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.filter > input[type=text] {
+    width: 60%;
+}
+
+.filter > input[type=submit] {
+    width: 30%;
+    background-color: var(--darkBrown);
+    BORDER: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif; 
 }
