@@ -88,3 +88,37 @@
     width: 400px;
     border-style: solid;
 }
+
+.bookLoanArea {
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+.bookAreaLoanImage {
+    width: auto;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-right: 50px;
+}
+
+.bookLoanImage {
+    height: 60vh;
+}
+
+.bookLoanAreaText {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    width: 100%;
+}
+
+.resumeLoan{
+    height: 40%;
+}
+
+.dataLoan {
+    margin-bottom: 30px;
+    height: 50%;
+}
