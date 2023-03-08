@@ -20,17 +20,17 @@ function Carousel() {
             </div>
             <div className='bookText'>
               <h1>L'invocation : Le Novice</h1>
-              <div class="InfoBook">
+              <div className="InfoBook">
                   <p><b>Tome 1</b></p>
                   <p>Écrivain: <b>Taran Matharu</b></p>
                   <p>Éditeur: <b>Hachette</b></p>
                   <p>Propriétaire: <b>Cyril Goldenschue</b></p>
               </div>
               <p><b>résumé : </b></p>
-              <div class="summary">
+              <div className="summary">
                   Orphelin, Fletcher imagine déjà le futur avec une vie assez difficile, mais dans la forge de son père adoptif, qui l'a pris sous son aile dès qu'il a été retrouvé seul, abandonné.
               </div>
-              <a class="Button ButtonInSlide" href="/Details">Détails</a>
+              <a className="Button ButtonInSlide" href="/Details">Détails</a>
             </div>
           </div>
         </div>
@@ -46,17 +46,17 @@ function Carousel() {
             </div>
             <div className='bookText'>
               <h1>L'invocation : Le Novice</h1>
-              <div class="InfoBook">
+              <div className="InfoBook">
                   <p><b>Tome 1</b></p>
                   <p>Écrivain: <b>Taran Matharu</b></p>
                   <p>Éditeur: <b>Hachette</b></p>
                   <p>Propriétaire: <b>Cyril Goldenschue</b></p>
               </div>
               <p><b>résumé : </b></p>
-              <div class="summary">
+              <div className="summary">
                   Orphelin, Fletcher imagine déjà le futur avec une vie assez difficile, mais dans la forge de son père adoptif, qui l'a pris sous son aile dès qu'il a été retrouvé seul, abandonné.
               </div>
-              <a class="Button ButtonInSlide" href="/Details">Détails</a>
+              <a className="Button ButtonInSlide" href="/Details">Détails</a>
             </div>
           </div>
         </div>
@@ -72,17 +72,17 @@ function Carousel() {
             </div>
             <div className='bookText'>
               <h1>L'invocation : Le Novice</h1>
-              <div class="InfoBook">
+              <div className="InfoBook">
                   <p><b>Tome 1</b></p>
                   <p>Écrivain: <b>Taran Matharu</b></p>
                   <p>Éditeur: <b>Hachette</b></p>
                   <p>Propriétaire: <b>Cyril Goldenschue</b></p>
               </div>
               <p><b>résumé : </b></p>
-              <div class="summary">
+              <div className="summary">
                   Orphelin, Fletcher imagine déjà le futur avec une vie assez difficile, mais dans la forge de son père adoptif, qui l'a pris sous son aile dès qu'il a été retrouvé seul, abandonné.
               </div>
-              <a class="Button ButtonInSlide" href="/Details">Détails</a>
+              <a className="Button ButtonInSlide" href="/Details">Détails</a>
             </div>
           </div>
         </div>
