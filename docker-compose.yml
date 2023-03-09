@@ -1,10 +1,33 @@
-version: "3.8"
 
+version: '3.8'
 services:
-  app:
-    container_name: docker-react-c
-    image: docker-react-i
-    build:
-      context: .
-    ports:
-      - 8080:80
+    # Database
+    mysql:
+        image: mysql:8
+        volumes:
+            - ./db_data:/var/lib/mysql
+            - ./build/library.sql:/docker-entrypoint-initdb.d/datadump.sql
+        restart: always
+        environment:
+            MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+            MYSQL_DATABASE: library
+            MYSQL_USER: reactDB
+            MYSQL_PASSWORD: secret
+    # phpmyadmin
+    phpmyadmin:
+        depends_on:
+        - mysql
+        image: phpmyadmin/phpmyadmin:latest
+        container_name: el_wp_phpmyadmin
+        environment:
+            PMA_HOST: mysql
+            PMA_PORT: 3306
+            PMA_ARBITRARY: 1
+        links:
+            - mysql:db
+        restart: always
+        ports:
+            - 8012:80
+
+volumes:
+    db_data: {}
