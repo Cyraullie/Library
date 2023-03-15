@@ -5,7 +5,6 @@ function HomeScreen() {
     <div className='Page'>
       <Carousel/>
       
-      <Carousel/>
     </div>
   );
 }
