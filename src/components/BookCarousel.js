@@ -1,96 +1,71 @@
-import React from 'react';
-import { CCarousel, CCarouselItem } from '@coreui/react';
+import React, { Component} from 'react';
 import '@coreui/coreui/dist/css/coreui.min.css'
 
-import T1 from '../assets/img/TMIT1.jpg';
-import T2 from '../assets/img/TMIT2.jpg';
-import T3 from '../assets/img/TMIT3.jpg';
+import axios from "axios";
+import env from "../env.json"
 
-function Carousel() {
+export default class BookData extends Component {
+  constructor(props) {
+    super(props);
+    
+    this.state = { BookDataState: [] }
+  }
 
-  return ( 
-    <CCarousel controls interval={50000}>
-
-      <CCarouselItem>
-
-        <div className='bookCard' alt="slide 1">
-          <div className='bookCardArea'>
-            <div>
-              <img className='bookImage' src={T1} />
-            </div>
-            <div className='bookText'>
-              <h1>L'invocation : Le Novice</h1>
-              <div className="InfoBook">
-                  <p><b>Tome 1</b></p>
-                  <p>Écrivain: <b>Taran Matharu</b></p>
-                  <p>Éditeur: <b>Hachette</b></p>
-                  <p>Propriétaire: <b>Cyril Goldenschue</b></p>
+  getData = () => {
+    axios.get(env.BASE_URL + "books")
+    .then((response) => {
+      this.getBookData(response.data) 
+    })
+    .catch(error => {
+      console.log(error);
+    }); 
+  }
+  
+    getBookData(data){
+        let bookArr = data;
+        let bookData = [];    
+          
+        for(let i = 0; i < bookArr.length; i++) {
+            bookData.push(
+              <div className='bookCard' alt="slide 1">
+                  <div className='bookCardArea'>
+                      <div>
+                        <img className='bookImage' src={require("../assets/img/"+bookArr[i].img_name)} />
+                      </div>
+                      <div className='bookText'>
+                      <h1>{bookArr.name}</h1>
+                      <div className="InfoBook">
+                          <p><b>Tome {bookArr[i].volume}</b></p>
+                          <p>Écrivain: <b>{bookArr[i].author}</b></p>
+                          <p>Éditeur: <b>{bookArr[i].editor}</b></p>
+                          <p>Propriétaire: <b>{bookArr[i].user_firstname} {bookArr[i].user_lastname}</b></p>
+                      </div>
+                      <p><b>résumé : </b></p>
+                      <div className="summary">
+                          {bookArr[i].summary}
+                          </div>
+                      <a className="Button ButtonInSlide" href={"/Details/" + bookArr[i].id}>Détails</a>
+                      </div>
+                  </div>
               </div>
-              <p><b>résumé : </b></p>
-              <div className="summary">
-                  Orphelin, Fletcher imagine déjà le futur avec une vie assez difficile, mais dans la forge de son père adoptif, qui l'a pris sous son aile dès qu'il a été retrouvé seul, abandonné.
-              </div>
-              <a className="Button ButtonInSlide" href="/Details">Détails</a>
-            </div>
-          </div>
-        </div>
+            )
+        }
 
-      </CCarouselItem>
+        this.setState({
+            BookDataState: bookData,
+        })
+    }
+    
+    
 
-      <CCarouselItem>
+  componentDidMount() {
+    this.getData()
+  }
 
-        <div className='bookCard' alt="slide 2">
-          <div className='bookCardArea'>
-            <div>
-              <img className='bookImage' src={T2} />
-            </div>
-            <div className='bookText'>
-              <h1>L'invocation : Le Novice</h1>
-              <div className="InfoBook">
-                  <p><b>Tome 1</b></p>
-                  <p>Écrivain: <b>Taran Matharu</b></p>
-                  <p>Éditeur: <b>Hachette</b></p>
-                  <p>Propriétaire: <b>Cyril Goldenschue</b></p>
-              </div>
-              <p><b>résumé : </b></p>
-              <div className="summary">
-                  Orphelin, Fletcher imagine déjà le futur avec une vie assez difficile, mais dans la forge de son père adoptif, qui l'a pris sous son aile dès qu'il a été retrouvé seul, abandonné.
-              </div>
-              <a className="Button ButtonInSlide" href="/Details">Détails</a>
-            </div>
-          </div>
-        </div>
-
-      </CCarouselItem>
-
-      <CCarouselItem>
-
-        <div className='bookCard' alt="slide 3">
-          <div className='bookCardArea'>
-            <div>
-              <img className='bookImage' src={T3} />
-            </div>
-            <div className='bookText'>
-              <h1>L'invocation : Le Novice</h1>
-              <div className="InfoBook">
-                  <p><b>Tome 1</b></p>
-                  <p>Écrivain: <b>Taran Matharu</b></p>
-                  <p>Éditeur: <b>Hachette</b></p>
-                  <p>Propriétaire: <b>Cyril Goldenschue</b></p>
-              </div>
-              <p><b>résumé : </b></p>
-              <div className="summary">
-                  Orphelin, Fletcher imagine déjà le futur avec une vie assez difficile, mais dans la forge de son père adoptif, qui l'a pris sous son aile dès qu'il a été retrouvé seul, abandonné.
-              </div>
-              <a className="Button ButtonInSlide" href="/Details">Détails</a>
-            </div>
-          </div>
-        </div>
-
-      </CCarouselItem>
-
-    </CCarousel>
-  );
+  render() {
+    return (
+      this.state.BookDataState
+    );
+  }
 };
 
-export default Carousel;
