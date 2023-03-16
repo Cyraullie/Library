@@ -20,6 +20,8 @@ return new class extends Migration
             $table->decimal('price', 5, 2);
             $table->enum('type', ["roman", "manga"]);
             $table->datetime("add_date");
+            $table->string('img_name');
+            $table->string("summary");
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
         });
