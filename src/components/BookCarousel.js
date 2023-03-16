@@ -33,9 +33,8 @@ export default class BookData extends Component {
                         <img className='bookImage' src={require("../assets/img/"+bookArr[i].img_name)} />
                       </div>
                       <div className='bookText'>
-                      <h1>{bookArr.name}</h1>
+                      <h1>{bookArr[i].name} T.{bookArr[i].volume}</h1>
                       <div className="InfoBook">
-                          <p><b>Tome {bookArr[i].volume}</b></p>
                           <p>Écrivain: <b>{bookArr[i].author}</b></p>
                           <p>Éditeur: <b>{bookArr[i].editor}</b></p>
                           <p>Propriétaire: <b>{bookArr[i].user_firstname} {bookArr[i].user_lastname}</b></p>
