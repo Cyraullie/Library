@@ -12,7 +12,7 @@ export default class BookData extends Component {
   }
 
   getData = () => {
-    axios.get(env.BASE_URL + "books")
+    axios.get(env.BASE_URL + "book/show")
     .then((response) => {
       this.getBookData(response.data) 
     })
