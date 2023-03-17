@@ -87,7 +87,12 @@
     height: 60vh;
     width: 400px;
     border-style: solid;
+    background-size: contain; 
+    background-repeat: no-repeat;
+	background-position: center;
 }
+
+
 
 .bookLoanArea {
     display: flex;
