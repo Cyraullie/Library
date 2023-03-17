@@ -19,4 +19,8 @@ use App\Http\Controllers\BorrowedController;
 */
 
 Route::get('/user', [UserController::class, "user"]);
-Route::get('/books', [BookController::class, "book_listing"]);
+Route::get('/book/show', [BookController::class, "book_listing"]);
+
+
+Route::post('/book/add', [BookController::class, "new_book"]);
+Route::post('/book/new_pic', [BookController::class, "new_pic"]);
