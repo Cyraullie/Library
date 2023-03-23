@@ -16,6 +16,7 @@ export default class NewBookScreen extends Component {
         let file = e.target.files[0];
         let fileReader = new FileReader();
         
+        //TODO verifier le format de l'image 
         this.state.tempFile = file;
 
         fileReader.readAsDataURL(file);
