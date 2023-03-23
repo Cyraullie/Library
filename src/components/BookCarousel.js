@@ -30,7 +30,7 @@ export default class BookData extends Component {
               <div className='bookCard' alt="slide 1">
                   <div className='bookCardArea'>
                       <div>
-                        <img className='bookImage' src={require("../assets/img/"+bookArr[i].img_name)} />
+                        <img className='bookImage' height="430px" src={require("../assets/img/"+bookArr[i].img_name)} />
                       </div>
                       <div className='bookText'>
                       <h1>{bookArr[i].name} T.{bookArr[i].volume}</h1>
