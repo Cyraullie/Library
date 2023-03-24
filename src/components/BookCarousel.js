@@ -11,13 +11,23 @@ export default class BookData extends Component {
     this.state = { BookDataState: [] }
   }
 
+  
+  preload = (books) => {
+    let images = [];
+    for (var i = 0; i < books.length; i++) {
+        images[i] = new Image();
+        images[i].src =  "/gallery/"+books[i].img_name+".webp";
+    }
+    return images; 
+  }
+
   getData = () => {
     axios.get(env.BASE_URL + "book/show")
     .then((response) => {
       this.getBookData(response.data) 
     })
     .catch(error => {
-      console.log(error);
+      //console.log(error);
     }); 
   }
   
@@ -25,13 +35,14 @@ export default class BookData extends Component {
         let bookArr = data;
         let bookData = [];    
           
+        let images = this.preload(bookArr);
+
         for(let i = 0; i < bookArr.length; i++) {
-          //TODO try get widht width 
             bookData.push(
-              <div className='bookCard' alt="slide 1">
+              <div className='bookCard' alt="slide 1" key={Math.random()}>
                   <div className='bookCardArea'>
                       <div>
-                        <img className='bookImage' height="430px" alt={"ici apparaît la couverture de "+bookArr[i].name+" T."+bookArr[i].volume} src={require("../assets/img/"+bookArr[i].img_name+".webp")} />
+                        <img className='bookImage' height="430px"  width={430/images[i].height*images[i].width+"px"} alt={"ici apparaît la couverture de "+bookArr[i].name+" T."+bookArr[i].volume} src={images[i].src} />
                       </div>
                       <div className='bookText'>
                       <h1>{bookArr[i].name} T.{bookArr[i].volume}</h1>
