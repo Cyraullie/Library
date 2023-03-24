@@ -24,7 +24,7 @@ class BookSeeder extends Seeder
             "type" => "roman",
             "add_date" => now(),
             "summary" => "Orphelin, Fletcher imagine déjà le futur avec une vie assez difficile, mais dans la forge de son père adoptif, qui l'a pris sous son aile dès qu'il a été retrouvé seul, abandonné.",
-            "img_name" => "TMIT1.jpg",
+            "img_name" => "TMIT1",
         ]);
 
         DB::table('books')->insert([
@@ -37,7 +37,7 @@ class BookSeeder extends Seeder
             "type" => "roman",
             "add_date" => now(),
             "summary" => "Orphelin, Fletcher imagine déjà le futur avec une vie assez difficile, mais dans la forge de son père adoptif, qui l'a pris sous son aile dès qu'il a été retrouvé seul, abandonné.",
-            "img_name" => "TMIT2.jpg",
+            "img_name" => "TMIT2",
         ]);
     }
 }
