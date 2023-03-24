@@ -1,4 +1,4 @@
-import logo from '../assets/img/logo.png';
+import logo from '../assets/img/logo.webp';
 
 function Header() {
   return (
@@ -6,7 +6,7 @@ function Header() {
       <div className="menuHeader">
         <a className="menuButtonHeader" href="/Loan">Emprunter</a>
         <a className="menuButtonHeader" href="/Render">Rendre</a>
-        <a href="/"><img className="logo" src={logo} /></a>
+        <a href="/"><img className="logo" alt="Ici appraît l'image du logo du site" src={logo} /></a>
         <a className="menuButtonHeader" href="/AddBook">Ajouter un livre</a>
         <a className="menuButtonHeader" href="/Login">Login</a>
       </div>

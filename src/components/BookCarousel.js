@@ -26,11 +26,12 @@ export default class BookData extends Component {
         let bookData = [];    
           
         for(let i = 0; i < bookArr.length; i++) {
+          //TODO try get widht width 
             bookData.push(
               <div className='bookCard' alt="slide 1">
                   <div className='bookCardArea'>
                       <div>
-                        <img className='bookImage' height="430px" src={require("../assets/img/"+bookArr[i].img_name)} />
+                        <img className='bookImage' height="430px" alt={"ici apparaît la couverture de "+bookArr[i].name+" T."+bookArr[i].volume} src={require("../assets/img/"+bookArr[i].img_name+".webp")} />
                       </div>
                       <div className='bookText'>
                       <h1>{bookArr[i].name} T.{bookArr[i].volume}</h1>

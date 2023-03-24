@@ -1,4 +1,4 @@
-import T1 from '../assets/img/TMIT1.jpg';
+import T1 from '../assets/img/TMIT1.webp';
 
 function DetailScreen() {
     return (

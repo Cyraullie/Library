@@ -1,6 +1,6 @@
-import T1 from '../assets/img/TMIT1.jpg';
-import T2 from '../assets/img/TMIT2.jpg';
-import T3 from '../assets/img/TMIT3.jpg';
+import T1 from '../assets/img/TMIT1.webp';
+import T2 from '../assets/img/TMIT2.webp';
+import T3 from '../assets/img/TMIT3.webp';
 
 function RenderScreen() {
     return (

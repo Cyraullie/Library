@@ -17,6 +17,7 @@ export default class NewBookScreen extends Component {
         let fileReader = new FileReader();
         
         //TODO verifier le format de l'image 
+        //TODO convert image to webp
         this.state.tempFile = file;
 
         fileReader.readAsDataURL(file);
