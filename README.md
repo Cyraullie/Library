@@ -1,70 +1,160 @@
-# Getting Started with Create React App
+# Site "Library"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1 Installation locale de l'api
 
-## Available Scripts
+### 1.1 Introduction
 
-In the project directory, you can run:
+Une image laradock Docker est utilisée pour le déploiement du projet en locale (https://laradock.io/) (Apache 2, MySQL, Redis, PHP 7.4.*).
 
-### `npm start`
+La version de Laravel (10.*) et des paquets est définie par le fichier composer.json.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Pour cet exemple d'installation le repository Laradock de ce projet est installé dans le répertoire `C:\projects\libdock`. Pour d'autres emplacement il faudra adapter les commandes ou configurations qui suivent dans cette guide.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1.2 Installation de ce repository
 
-### `npm test`
+Se déplacer dans le répertoire de base des projets.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+cd C:\projects
+```
 
-### `npm run build`
+Télécharger le répository laradock dans `./libdock`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+git clone https://github.com/Laradock/laradock.git ./libdock
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1.3 Installation et configuration laradock
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Se déplacer dans le répertoire du projet laradock.
 
-### `npm run eject`
+```
+cd C:\projects\libdock
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Copier le fichier de configuration d'exemple.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+copy .env.example .env
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Modifier le fichier de configuration .env (les fichiers qui se trouvent dans `C:\projects\Library` sont mis dans `/var/www` dans l'image docker).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+APP_CODE_PATH_HOST=../Library/api/
+PHP_VERSION=8.2
+MYSQL_DATABASE=*au choix*
+MYSQL_USER=*au choix*
+MYSQL_PASSWORD=*au choix*
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Copiez la configuration d'Apache ci-dessous dans ```apache2/sites/default.apache.conf```.
 
-### Code Splitting
+```
+<VirtualHost *:80>
+  ServerName laradock.test
+  DocumentRoot /var/www/public
+  Options Indexes FollowSymLinks
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  <Directory "/var/www/public">
+    AllowOverride All
+    <IfVersion < 2.4>
+      Allow from all
+    </IfVersion>
+    <IfVersion >= 2.4>
+      Require all granted
+    </IfVersion>
+  </Directory>
 
-### Analyzing the Bundle Size
+  ErrorLog /var/log/apache2/error.log
+  CustomLog /var/log/apache2/access.log combined
+</VirtualHost>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 1.4 Contruction de l'image docker
 
-### Making a Progressive Web App
+Se déplacer dans le répertoire du projet laradock.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+cd C:\projects\libdock
+```
 
-### Advanced Configuration
+Exécuter la ligne de commande suivante.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+docker-compose up -d apache2 mysql phpmyadmin workspace
+```
 
-### Deployment
+Cette commande va construire et démarrer les images suivantes :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- MySQL (host pour l'accès avec un outil MySQL `localhost:3306`).
+- phpMyAdmin (URL d'accès `<a href="http://localhost:8081/">http://localhost:8081/</a>`).
+- Serveur Apache (accès navigateur par URL `http://localhost` ou `https://localhost`).
+- Serveur Redis.
+- Serveur workspace (contient des outils pour le développement comme composer et node.js).
+- Serveur e-mail test MailHog (URL d'accès `http://localhost:1025/`).
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 1.5 Configuration Laravel
+
+Se déplacer dans le bon répertoire.
+
+```
+cd C:\projects\Library\api
+```
+
+Utiliser la configuration pour le serveur locale.
+
+```
+copy .env.example .env
+```
+
+### 1.6 Installation paquets Laravel
+
+Se déplacer dans le bon répertoire.
+
+```
+cd C:\projects\Library\api
+```
+Ouvrir une CLI de l'image docker `workspace`.
+
+```
+docker exec -i -t laradock_workspace_1 bash
+```
+
+Installer les paquets selon le fichier composer.lock.
+
+```
+composer install 
+```
+
+### 1.7 Initialisation et visualisation de la base de données
+
+#### Informations pour la connexion avec phpMyAdmin
+à changer dans le `.env`
+
+- DB_DATABASE=*choisi précédemment*
+- DB_USERNAME=*choisi précédemment*
+- DB_PASSWORD=*choisi précédemment*
+
+#### Création des tables
+
+Utiliser les fichiers de migration présents dans `database/migrations` et `database/seeds` pour générer les tables et des données avec la commande :
+
+```
+php artisan migrate:fresh --seed
+```
+
+### 1.8 Naviguer
+
+Les routes définies dans Laravel pour l'api se trouve dans se trouvent dans le fichier `routes/api.php`.
+
+## 2 Lancement de l'application
+
+Pour lancer l'application il vous faudra être dans le répertoire `C:\projects\Library` et lancer la commande suivante :
+
+```
+npm start
+```

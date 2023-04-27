@@ -1,0 +1,174 @@
+.bookImage {
+    
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-right: 20px;
+}
+  
+.bookCard {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--beige);
+    color: #000;
+}
+  
+.bookCardArea {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+  
+.bookText {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+
+.bookButton {
+    background-color: var(--darkBrown);
+    BORDER: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    width: 100%;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif; 
+ }
+
+ .bookAddArea {
+     display: flex;
+     width: 90%;
+     margin: auto;
+ }
+
+ .bookAddAreaText {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    width: 100%;
+}
+
+.bookInput{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bookAddTextData{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.data {
+    margin-right: 20px;
+}
+
+.resume{
+    height: 60%;
+}
+
+.bookAddAreaImage {
+    width: auto;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-right: 50px;
+}
+
+.bookAddImage {
+    line-height: 60vh;
+    text-align: center;
+    height: 60vh;
+    width: 400px;
+    border-style: solid;
+    background-size: contain; 
+    background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+.bookLoanArea {
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+.bookAreaLoanImage {
+    width: auto;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-right: 50px;
+}
+
+.bookLoanImage {
+    height: 60vh;
+}
+
+.bookLoanAreaText {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    width: 100%;
+}
+
+.resumeLoan{
+    height: 40%;
+}
+
+.dataLoan {
+    margin-bottom: 30px;
+    height: 50%;
+}
+
+.LoanBookImage {
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.bookTable > tr > td, th {
+ border: 1px solid;
+}
+
+.bookTable > thead > tr > th {
+    background-color: var(--darkBrown);
+    color: white;
+    text-align: center;
+    border: 1px solid;
+    border-color: black;
+}
+
+.bookTable > tbody > tr > td {
+    background-color: var(--beige);
+    color: var(--darkBrown);
+    text-align: center;
+    border: 1px solid;
+    border-color: black;
+}
+
+.bookTable {
+    margin: auto;
+    margin-top: 30px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.bookCover {
+    width: 165px;
+    align-items: center;
+}
+
+.bookState {
+    text-align: center;
+    width: 150px;
+}
